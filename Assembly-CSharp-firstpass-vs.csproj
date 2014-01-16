@@ -53,6 +53,7 @@
      <Compile Include="Assets\Plugins\Control-Freak\TouchStick.cs" />
      <Compile Include="Assets\Plugins\Control-Freak\TouchZone.cs" />
      <Compile Include="Assets\Plugins\Control-Freak\TouchableControl.cs" />
+     <Compile Include="Assets\Plugins\iTween.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

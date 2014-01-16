@@ -1,12 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BombPickup.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Gun.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerControl.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Gun.cs" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/Editor/Control-Freak-Editor/TouchControllerEditor.cs" Line="1" Column="1" />
-      <File FileName="Assets/Plugins/G.js" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/BombPickup.cs" Line="7" Column="2" />
+      <File FileName="Assets/Scripts/PlayerControl.cs" Line="113" Column="21" />
+      <File FileName="Assets/Plugins/G.js" Line="14" Column="27" />
+      <File FileName="Assets/Scripts/TucumaPick.cs" Line="28" Column="17" />
+      <File FileName="Assets/Scripts/Gun.cs" Line="37" Column="16" />
+      <File FileName="Assets/Scripts/Rocket.cs" Line="41" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

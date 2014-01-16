@@ -27,10 +27,11 @@ public class TucumaPick : MonoBehaviour {
 			// Increase the number of bombs the player has.
 			if (G.Tucumas < G.maxTucumas) {
 				G.Tucumas++;
+				// Destroy the crate.
+				Destroy(transform.root.gameObject);
 			}
 			
-			// Destroy the crate.
-			Destroy(transform.root.gameObject);
+
 		}
 	}
 }

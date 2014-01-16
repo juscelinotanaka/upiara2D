@@ -12,6 +12,10 @@ public class Rocket : MonoBehaviour
 		Destroy(gameObject, 2);
 	}
 
+	void Update() {
+
+		//transform.root.gameObject.rigidbody2D.velocity.y = 
+	}
 
 	void OnExplode()
 	{
