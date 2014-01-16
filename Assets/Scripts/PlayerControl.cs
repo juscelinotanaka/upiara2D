@@ -38,7 +38,7 @@ public class PlayerControl : MonoBehaviour
 		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
 
 		// If the jump button is pressed and the player is grounded then the player should jump.
-		if(CFInput.GetButtonDown("Jump") && grounded)
+		if((CFInput.GetButtonDown("Jump") || Input.GetButtonDown("Jump")) && grounded)
 			jump = true;
 	}
 
@@ -46,7 +46,7 @@ public class PlayerControl : MonoBehaviour
 	void FixedUpdate ()
 	{
 		// Cache the horizontal input.
-		float h = CFInput.GetAxis("Horizontal");
+		float h = CFInput.GetAxis("Horizontal") + Input.GetAxis("Horizontal");
 
 		// The Speed animator parameter is set to the absolute value of the horizontal input.
 		anim.SetFloat("Speed", Mathf.Abs(h));

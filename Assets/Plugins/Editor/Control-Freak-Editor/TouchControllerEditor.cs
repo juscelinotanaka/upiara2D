@@ -379,7 +379,7 @@ override public void OnInspectorGUI()
 	this.serializedObject.Update();
 
 	
-	EditorGUIUtility.LookLikeInspector();
+	//EditorGUIUtility.LookLikeInspector();
 
 	EditorGUILayout.Space();
 

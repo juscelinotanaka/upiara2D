@@ -49,6 +49,9 @@
      <Compile Include="Assets\Plugins\Editor\Control-Freak-Editor\TouchControllerCodeTemplateGenerator.cs" />
      <Compile Include="Assets\Plugins\Editor\Control-Freak-Editor\TouchControllerConstGenerator.cs" />
      <Compile Include="Assets\Plugins\Editor\Control-Freak-Editor\TouchControllerEditor.cs" />
+ <Reference Include="Library\ScriptAssemblies\Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
  <Reference Include="\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs">
  <HintPath>\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs.dll</HintPath>
  </Reference>

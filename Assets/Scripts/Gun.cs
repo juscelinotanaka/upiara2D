@@ -22,11 +22,13 @@ public class Gun : MonoBehaviour
 	void Update ()
 	{
 		// If the fire button is pressed...
-		if(CFInput.GetButtonDown("Fire1"))
+		if((CFInput.GetButtonDown("Fire1") || Input.GetButtonDown("Fire1")) && G.Tucumas > 0)
 		{
 			// ... set the animator Shoot trigger parameter and play the audioclip.
 			anim.SetTrigger("Shoot");
 			audio.Play();
+
+			G.Tucumas--;
 
 			// If the player is facing right...
 			if(playerCtrl.facingRight)
