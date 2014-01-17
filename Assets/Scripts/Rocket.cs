@@ -5,16 +5,18 @@ public class Rocket : MonoBehaviour
 {
 	public GameObject explosion;		// Prefab of explosion effect.
 
+	private Vector2 vel;
+
+	void SlideVelocidade(float valor) {
+		transform.root.gameObject.rigidbody2D.velocity = new Vector2(vel.x, -valor);
+	}
 
 	void Start () 
 	{
 		// Destroy the rocket after 2 seconds if it doesn't get destroyed before then.
 		Destroy(gameObject, 2);
-	}
-
-	void Update() {
-
-		//transform.root.gameObject.rigidbody2D.velocity.y = 
+		vel = transform.root.gameObject.rigidbody2D.velocity;
+		iTween.ValueTo(gameObject,iTween.Hash("from", 0, "to", 10, "time", 0.7 ,"easetype",iTween.EaseType.easeOutQuart,"onupdate","SlideVelocidade"));	
 	}
 
 	void OnExplode()
