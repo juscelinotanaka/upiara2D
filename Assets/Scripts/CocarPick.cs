@@ -28,20 +28,20 @@ public class CocarPick : MonoBehaviour {
 
 	private float offset = 10f;
 
+	private PlayerControl control;
+	private TouchController touch;
 
 
 
 	void Start () {
-
+		G.rate = Screen.height/480.0f;
 		boxWidth = boxWidth * G.rate;
-		boxHeight = boxHeight * rate;
-		cntWidth = cntWidth * rate;
-		cntHeight = cntHeight * rate;
-		offset = offset * rate;
-		skin.button.fontSize = Mathf.RoundToInt(18*rate);
-		skin.box.fontSize = Mathf.RoundToInt(30*rate);
-
-		Debug.Log(" " + rate + " " + boxWidth + " " + boxHeight);
+		boxHeight = boxHeight * G.rate;
+		cntWidth = cntWidth * G.rate;
+		cntHeight = cntHeight * G.rate;
+		offset = offset * G.rate;
+		skin.button.fontSize = Mathf.RoundToInt(18*G.rate);
+		skin.box.fontSize = Mathf.RoundToInt(30*G.rate);
 	}
 
 	void OnGUI() {
@@ -52,7 +52,10 @@ public class CocarPick : MonoBehaviour {
 			if (pegou) {
 				GUI.Box(new Rect( (Screen.width - boxWidth)/2, (Screen.height - boxHeight)/2, boxWidth, boxHeight ), "");
 				if (resolvendo) {
-					
+					if (GUI.Button(new Rect((Screen.width - cntWidth)/2, (Screen.height + boxHeight)/2 - offset - cntHeight, cntWidth, cntHeight), "Continuar")) {
+						Debug.Log("Ganhou");
+						pegou = false;
+					}
 				} else {
 					GUI.Label(new Rect((Screen.width - boxWidth)/2, (Screen.height - boxHeight)/2, boxWidth, boxHeight - offset - cntHeight), "Para ganhar o cocar você deve resolver o problema a seguir que desativará o trator que está destruíndo a floresta.");
 					if (GUI.Button(new Rect((Screen.width - cntWidth)/2, (Screen.height + boxHeight)/2 - offset - cntHeight, cntWidth, cntHeight), "Continuar")) {
@@ -73,6 +76,10 @@ public class CocarPick : MonoBehaviour {
 			AudioSource.PlayClipAtPoint(pickupClip, transform.position);
 			
 			pegou = true;
+
+			touch = GameObject.Find("hero").GetComponent<TouchController>();
+
+			touch.enabled = false;
 
 		}
 	}

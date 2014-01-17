@@ -5,10 +5,6 @@ public static class G {
 	var Tucumas : int = 5;
 	var rate : float;
 	
-	function Start() {
-		rate = Screen.height/480.0f;
-	}
-	
 	var numPlayers : int = 4;
 	var firstPlay : boolean = true;
 	public var currentPlayer : int = 0;
