@@ -7,6 +7,8 @@ public class FollowPlayer : MonoBehaviour
 	
 	private Transform player;		// Reference to the player.
 
+	public GUISkin skin;
+
 
 	void Awake ()
 	{
@@ -19,4 +21,6 @@ public class FollowPlayer : MonoBehaviour
 		// Set the position to the player's position with the offset.
 		transform.position = player.position + offset;
 	}
+
+
 }

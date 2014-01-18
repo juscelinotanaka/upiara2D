@@ -1,20 +1,27 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CocarPick.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerHealth.cs">
     <Files>
-      <File FileName="Assets/Scripts/CocarPick.cs" Line="76" Column="14" />
-      <File FileName="Assets/Plugins/G.js" Line="21" Column="30" />
+      <File FileName="Assets/Scripts/CocarPick.cs" Line="235" Column="34" />
+      <File FileName="Assets/Plugins/G.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Matematica.cs" Line="1" Column="1" />
+      <File FileName="../../outros/itweenexamples/AnimatingGUITextures/Assets/Scripts/PresentationScreen.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Button.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerControl.cs" Line="77" Column="1" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="16" Column="4" />
+      <File FileName="Assets/Scripts/HealthPickup.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/LayBombs.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FollowPlayer.cs" Line="14" Column="46" />
+      <File FileName="Assets/Scripts/PickupSpawner.cs" Line="54" Column="6" />
+      <File FileName="Assets/Scripts/PlayerHealth.cs" Line="96" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Scripts" expanded="True">
-              <Node name="CocarPick.cs" selected="True" />
+              <Node name="PlayerHealth.cs" selected="True" />
             </Node>
-          </Node>
-          <Node name="Assembly-UnityScript-firstpass" expanded="True">
-            <Node name="Plugins" expanded="True" />
           </Node>
         </State>
       </Pad>

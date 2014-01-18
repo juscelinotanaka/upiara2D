@@ -23,6 +23,16 @@ public class PlayerControl : MonoBehaviour
 	private bool grounded = false;			// Whether or not the player is grounded.
 	private Animator anim;					// Reference to the player's animator component.
 
+	public GUISkin skin;
+
+	void OnGUI() {
+		if (skin) {
+			GUI.skin = skin;
+			skin.label.fontSize = Mathf.RoundToInt(30f*G.rate);
+			GUI.Label(new Rect(20,20,100,50), ""+G.Tucumas);
+		}
+		
+	}
 
 	void Awake()
 	{
@@ -78,7 +88,7 @@ public class PlayerControl : MonoBehaviour
 
 			// Play a random jump audio clip.
 			int i = Random.Range(0, jumpClips.Length);
-			AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
+			//AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
 
 			// Add a vertical force to the player.
 			rigidbody2D.AddForce(new Vector2(0f, jumpForce));
